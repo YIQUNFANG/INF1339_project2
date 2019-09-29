@@ -2,7 +2,35 @@
 <head>
 <title> YIQUN INF1339 Project 2</title>
 </head>
+<style>
+    p.test_class {
+        font: normal;
+        font-size: 18px;
+        color: cadetblue;
+    }
+    .button {
+        font-size: 12px;
+        cursor: pointer;
+        background-color: aliceblue;
+        color:  black;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 2px 1px;
+        
+    }
+    .button:hover {
+        background-color: cadetblue;
+    }
+    
+</style>
+<script>
+    function hello(){
+        document.getElementById("sentinel").innerHTML = "HELLO"
+    }
+</script>
 <body>
 <h3>API Project Interation 0</h3>
+    <p id = "sentinel" class = "test_class"></p>
+    <button class = "button" onclick = "hello()">Hello!</button>
 </body>
 </html>
